@@ -1,0 +1,6 @@
+﻿<%@ServiceHost 
+    language="C#"
+    debug="true"
+    Service="JavaChat.ServiceChat"
+    Factory="System.ServiceModel.Activation.WebScriptServiceHostFactory"
+ %>

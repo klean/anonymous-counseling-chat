@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="WebChat.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>AlbaHusChat</title>
+       <script type="text/javascript">
+           function chatID() {
+               return querySt('id');
+           }
+
+           function querySt(ji) {
+               hu = window.location.search.substring(1);
+               gy = hu.split("&");
+               for (i = 0; i < gy.length; i++) {
+                   ft = gy[i].split("=");
+                   if (ft[0] == ji) {
+                       return ft[1];
+                   }
+               }
+           }
+
+       </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="OnLoad();">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+        <Services>
+            <asp:ServiceReference Path="ChatService.svc" />
+        </Services>
+    </asp:ScriptManager>
+    <center>
+    <table id="main" cellpadding="0" cellspacing="0" style="width: 700px; height: 500px;">
+        <tr>
+            <td id="topleftcorner">
+            </td>
+            <td id="topborder">
+            </td>
+            <td id="toprightcorner">
+            </td>
+        </tr>
+        <tr>
+            <td class="leftborder" >
+            </td>
+            <td id="topLeft">
+            
+                <div id="topRight" >
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderTopRight" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </div>
+                <div id="topCenter" >
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderTopCenter" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </div>
+            </td>
+            <td class="rightborder">
+            </td>
+        </tr>
+        <tr>
+            <td class="leftborder">
+            </td>
+            <td id="content" valign="top" align="left">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+               
+            </td>
+            <td class="rightborder">
+            </td>
+        </tr>
+        <tr>
+            <td id="bottomleftcorner">
+            </td>
+            <td id="bottomborder" >
+            </td>
+            <td id="bottomrightcorner">
+            </td>
+        </tr>
+    </table>
+</center>
+    </form>
+</body>
+</html>
