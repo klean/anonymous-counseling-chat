@@ -1,10 +1,18 @@
-== ANONYMOUS COUNSELLING CHAT V.1.0 ==
+## Anonymous Counselling Chat v. 1.0
+
 The Anonymous Counseling chat is a open-source counseling chat.
+
+## Background
+
+The anonymous counseling chat project has been developed and open-sourced by NETlinQ and Klean as a secure and anonymous web-based chat solution.
+
+It can be deployed for many purposes, but was originally developed to be used by a publicly funded teenage counselling hotline.
+
+Contributions and enhancements are very welcome.
 
 The chat-server is running as a Microsoft WCF-webservice, and the clients run, using javascript only (no installation of any third party software needed).
 
-
-== INSTALLATION / USING THE CODE ==
+## Installation / using the code
 The solution is a Microsoft Visual Studio 2010 .sln file, and can be opened with any version of VS2010.
 
 The code syntax is mostly C# and javascript.
@@ -17,12 +25,13 @@ Layout / Graphics can easily be updated, since the solution supports skinning an
 
 The sites Default.aspx is a small form you can choose to use or not.
 
-
-== DEPLOYMENT ==
+## Deployment
 The solution requires Microsoft .net 4.0 platform (IIS7).
 
+## License
 
-== LICENSE ==
+The anonymous counseling chat project is distributed as open source software under the MIT license, as described in the included [MIT-LICENSE.txt](http://github.com/klean/anonymous-counseling-chat/blob/master/MIT-LICENSE.txt) file.
+
 Copyright (c) 2011 John Resig, http://jquery.com/
 
 Permission is hereby granted, free of charge, to any person obtaining
