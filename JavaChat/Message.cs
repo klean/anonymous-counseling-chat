@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
 
 namespace JavaChat
 {
-    [DataContract]
+    [DataContract(Namespace = "your.namespace.com")]
     public enum eStatus
     {
         [EnumMember]
@@ -21,7 +18,7 @@ namespace JavaChat
         Timeout
     }
 
-    [DataContract]
+    [DataContract(Namespace = "your.namespace.com")]
     public enum eMessageType
     {
         [EnumMember]
@@ -36,7 +33,7 @@ namespace JavaChat
         QueueMessage
     }
 
-    [DataContract]
+    [DataContract(Namespace = "your.namespace.com")]
     public class Message
     {
         [DataMember]

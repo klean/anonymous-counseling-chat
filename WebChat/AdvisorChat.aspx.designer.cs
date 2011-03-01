@@ -130,22 +130,22 @@ namespace WebChat {
         protected global::System.Web.UI.WebControls.Label lblReferenceValue;
         
         /// <summary>
-        /// lblLocation control.
+        /// lblMunicipality control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLocation;
+        protected global::System.Web.UI.WebControls.Label lblMunicipality;
         
         /// <summary>
-        /// lblLocationValue control.
+        /// lblMunicipalityValue control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLocationValue;
+        protected global::System.Web.UI.WebControls.Label lblMunicipalityValue;
         
         /// <summary>
         /// tbMessages control.

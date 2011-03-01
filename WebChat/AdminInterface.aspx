@@ -4,33 +4,55 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script type="text/javascript">
 
+        var isQueueOpen = false;
+        var queueStatusInterval = "";
         function OnLoad() {
 
+            WaitQueue();
+            QueueStatus();
             setInterval(WaitQueue, 1000);
+            queueStatusInterval = setInterval(QueueStatus, 1500);
         }
 
         function OpenQueue() {
 
-            javachat.iservicechat.OpenQueue();
-
+            clearInterval(queueStatusInterval);
+            var btnOpen = document.getElementById('<%= btnOpenQueue.ClientID %>');
+            btnOpen.disabled = true;
+            your.namespace.com.IServiceChat.OpenQueue(QueueChangeCompleted, QueueChangeFailed);
             return false;
         }
 
         function CloseQueue() {
 
-            javachat.iservicechat.CloseQueue();
-
+            clearInterval(queueStatusInterval);
+            var btnClose = document.getElementById('<%= btnCloseQueue.ClientID %>');
+            btnClose.disabled = true;
+            your.namespace.com.IServiceChat.CloseQueue(QueueChangeCompleted, QueueChangeFailed);           
+            
             return false;
         }
 
+        function QueueChangeCompleted() {
+            WaitQueue();
+            queueStatusInterval = setInterval(QueueStatus, 1500);
+        }
+
+        function QueueChangeFailed() {
+            WaitQueue();
+            queueStatusInterval = setInterval(QueueStatus, 1500);
+        }
+
+
         function WaitQueue() {
-            javachat.iservicechat.QueueCount('<%= Guid.Empty %>', WaitQueueComplete, WaitQueueFailed);
+            your.namespace.com.IServiceChat.QueueCount('<%= Guid.Empty %>', WaitQueueComplete, WaitQueueFailed);
         }
         function WaitQueueComplete(result) {
             try {
                 if (result >= 0) {
                     var lbl = document.getElementById('<%= lblQueueSizeValue.ClientID %>');
                     lbl.innerHTML = result;
+                    
                 }
             } catch (e) {
 
@@ -39,6 +61,40 @@
         }
 
         function WaitQueueFailed(result) {
+            
+        }
+
+        function QueueStatus() {
+            your.namespace.com.IServiceChat.QueueStatus(QueueStatusComplete, QueueStatusFailed);
+        }
+        function QueueStatusComplete(result) {
+            try {
+                isQueueOpen = result;
+                var btnClose = document.getElementById('<%= btnCloseQueue.ClientID %>');
+                var btnOpen = document.getElementById('<%= btnOpenQueue.ClientID %>');
+                btnOpen.disabled = false;
+                btnClose.disabled = false;
+                if (isQueueOpen) {
+                    btnClose.style.visibility = "visible";
+                    btnClose.style.display = "";
+                    btnOpen.style.visibility = "hidden";
+                    btnOpen.style.display = "none";
+                }
+                else {
+                    btnClose.style.visibility = "hidden";
+                    btnClose.style.display = "none";
+                    btnOpen.style.visibility = "visible";
+                    btnOpen.style.display = "";
+                }
+                
+                
+            } catch (e) {
+
+            }
+
+        }
+
+        function QueueStatusFailed(result) {
         }
     </script>
 </asp:Content>
@@ -57,16 +113,15 @@
             <tr>
                 <td colspan="2">
                     <h1>
-                        <asp:Label ID="lblHeader" runat="server" Text="AlbaHusChat Admin Interface" />
+                        <asp:Label ID="lblHeader" runat="server" Text="AnnonymousChat Admin Interface" />
                     </h1>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
                     <div style="float: right;">
-                        <asp:Button ID="btnCloseQueue" runat="server" Text="Luk kø" OnClientClick="javascript:return CloseQueue();" />
-                        &nbsp;
-                        <asp:Button ID="btnOpenQueue" runat="server" Text="Åben kø" OnClientClick="javascript:return OpenQueue();" />
+                        <asp:Button ID="btnCloseQueue" runat="server" Text="Køen er åben" OnClientClick="javascript:return CloseQueue();" style=" display: none; visibility: hidden; margin-right:5px; width: 125px; height:90px; background-color: #9cbf1a;" />
+                        <asp:Button ID="btnOpenQueue" runat="server" Text="Køen er lukket" OnClientClick="javascript:return OpenQueue();" style=" display: none; visibility: hidden;  margin-right:5px; width: 125px; height:90px; background-color: #bf1a1a;"/>
                     </div>
                 </td>
             </tr>

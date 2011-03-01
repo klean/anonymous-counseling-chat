@@ -52,39 +52,44 @@
   <ItemGroup>
     <Content Include="AdminInterface.aspx" />
     <Content Include="AdvisorChat.aspx" />
-    <Content Include="App_Themes\AlbahusChat\AlbahusChat.css" />
-    <Content Include="App_Themes\AlbahusChat\Images\1_B++rneChatten_chat-open.jpg" />
-    <Content Include="App_Themes\AlbahusChat\Images\2_B++rneChatten_chat-wait.jpg" />
-    <Content Include="App_Themes\AlbahusChat\Images\3_B++rneChatten_chat-closed.jpg" />
-    <Content Include="App_Themes\AlbahusChat\Images\4_B++rneChatten_sp++rgsma¦èl.jpg" />
-    <Content Include="App_Themes\AlbahusChat\Images\5_B++rneChatten_widget.jpg" />
-    <Content Include="App_Themes\AlbahusChat\Images\6_B++rneChatten_chat-barn.jpg" />
-    <Content Include="App_Themes\AlbahusChat\Images\7_B++rneChatten_chat-ra¦èdgiver.jpg" />
-    <Content Include="App_Themes\AlbahusChat\Images\8_B++rneChatten_chat-ra¦èdgiver-pause.jpg" />
-    <Content Include="App_Themes\AlbahusChat\Images\albahus_logotype.gif" />
-    <Content Include="App_Themes\AlbahusChat\Images\background.png" />
-    <Content Include="App_Themes\AlbahusChat\Images\border_bottom.png" />
-    <Content Include="App_Themes\AlbahusChat\Images\border_left.png" />
-    <Content Include="App_Themes\AlbahusChat\Images\border_right.png" />
-    <Content Include="App_Themes\AlbahusChat\Images\border_top.png" />
-    <Content Include="App_Themes\AlbahusChat\Images\btn_black.png" />
-    <Content Include="App_Themes\AlbahusChat\Images\btn_green.png" />
-    <Content Include="App_Themes\AlbahusChat\Images\btn_send.png" />
-    <Content Include="App_Themes\AlbahusChat\Images\chatWelcome.jpg" />
-    <Content Include="App_Themes\AlbahusChat\Images\corner_bottom_left.png" />
-    <Content Include="App_Themes\AlbahusChat\Images\corner_bottom_right.png" />
-    <Content Include="App_Themes\AlbahusChat\Images\corner_top_left.png" />
-    <Content Include="App_Themes\AlbahusChat\Images\corner_top_right.png" />
-    <Content Include="App_Themes\AlbahusChat\Images\logo_borneChat.png" />
-    <Content Include="App_Themes\AlbahusChat\Images\logo_borneChat_right.png" />
-    <Content Include="App_Themes\AlbahusChat\Images\top.png" />
-    <Content Include="App_Themes\AlbahusChat\Images\topLeft.png" />
-    <Content Include="App_Themes\AlbahusChat\Images\topRight.png" />
-    <Content Include="Images\Smileys\biggrin.gif" />
+    <Content Include="App_Themes\AnonymousChat\AnonymousChat.css" />
+    <Content Include="App_Themes\AnonymousChat\Images\1_B++rneChatten_chat-open.jpg" />
+    <Content Include="App_Themes\AnonymousChat\Images\2_B++rneChatten_chat-wait.jpg" />
+    <Content Include="App_Themes\AnonymousChat\Images\3_B++rneChatten_chat-closed.jpg" />
+    <Content Include="App_Themes\AnonymousChat\Images\4_B++rneChatten_sp++rgsma¦èl.jpg" />
+    <Content Include="App_Themes\AnonymousChat\Images\5_B++rneChatten_widget.jpg" />
+    <Content Include="App_Themes\AnonymousChat\Images\6_B++rneChatten_chat-barn.jpg" />
+    <Content Include="App_Themes\AnonymousChat\Images\7_B++rneChatten_chat-ra¦èdgiver.jpg" />
+    <Content Include="App_Themes\AnonymousChat\Images\8_B++rneChatten_chat-ra¦èdgiver-pause.jpg" />
+    <Content Include="App_Themes\AnonymousChat\Images\albahuslogo.png" />
+    <Content Include="App_Themes\AnonymousChat\Images\albahus_logotype.gif" />
+    <Content Include="App_Themes\AnonymousChat\Images\background.png" />
+    <Content Include="App_Themes\AnonymousChat\Images\border_bottom.png" />
+    <Content Include="App_Themes\AnonymousChat\Images\border_left.png" />
+    <Content Include="App_Themes\AnonymousChat\Images\border_right.png" />
+    <Content Include="App_Themes\AnonymousChat\Images\border_top.png" />
+    <Content Include="App_Themes\AnonymousChat\Images\btn_black.png" />
+    <Content Include="App_Themes\AnonymousChat\Images\btn_green.png" />
+    <Content Include="App_Themes\AnonymousChat\Images\btn_send.png" />
+    <Content Include="App_Themes\AnonymousChat\Images\chatWelcome.jpg" />
+    <Content Include="App_Themes\AnonymousChat\Images\corner_bottom_left.png" />
+    <Content Include="App_Themes\AnonymousChat\Images\corner_bottom_right.png" />
+    <Content Include="App_Themes\AnonymousChat\Images\corner_top_left.png" />
+    <Content Include="App_Themes\AnonymousChat\Images\corner_top_right.png" />
+    <Content Include="App_Themes\AnonymousChat\Images\logo_borneChat.png" />
+    <Content Include="App_Themes\AnonymousChat\Images\logo_borneChat_right.png" />
+    <Content Include="App_Themes\AnonymousChat\Images\top.png" />
+    <Content Include="App_Themes\AnonymousChat\Images\topLeft.png" />
+    <Content Include="App_Themes\AnonymousChat\Images\topRight.png" />
     <Content Include="ChatService.svc" />
-    <Content Include="ChildChat.aspx" />
-    <Content Include="ChildQueue.aspx" />
+    <Content Include="ClientChat.aspx" />
+    <Content Include="ClientQueue.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Images\Smileys\biggrin.gif" />
+    <Content Include="Images\Smileys\happywink.gif" />
+    <Content Include="Images\Smileys\sad.gif" />
+    <Content Include="Images\Smileys\sadwink.gif" />
+    <Content Include="Images\Smileys\smile.gif" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
@@ -111,19 +116,19 @@
     <Compile Include="AdvisorChat.aspx.designer.cs">
       <DependentUpon>AdvisorChat.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ChildChat.aspx.cs">
-      <DependentUpon>ChildChat.aspx</DependentUpon>
+    <Compile Include="ClientChat.aspx.cs">
+      <DependentUpon>ClientChat.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ChildChat.aspx.designer.cs">
-      <DependentUpon>ChildChat.aspx</DependentUpon>
+    <Compile Include="ClientChat.aspx.designer.cs">
+      <DependentUpon>ClientChat.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ChildQueue.aspx.cs">
-      <DependentUpon>ChildQueue.aspx</DependentUpon>
+    <Compile Include="ClientQueue.aspx.cs">
+      <DependentUpon>ClientQueue.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ChildQueue.aspx.designer.cs">
-      <DependentUpon>ChildQueue.aspx</DependentUpon>
+    <Compile Include="ClientQueue.aspx.designer.cs">
+      <DependentUpon>ClientQueue.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -151,7 +156,7 @@
     <Content Include="Site.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Themes\AlbahusChat\AlbahusChat.skin" />
+    <Content Include="App_Themes\AnonymousChat\AnonymousChat.skin" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JavaChat\JavaChat.csproj">
@@ -167,7 +172,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>54908</DevelopmentServerPort>
+          <DevelopmentServerPort>27154</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

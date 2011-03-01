@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Serialization;
 using System.ServiceModel;
-using System.Text;
 using System.Timers;
 
 namespace JavaChat
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "ServiceChat" in both code and config file together.
+    [ServiceBehavior(IncludeExceptionDetailInFaults = true)]
     public class ServiceChat : IServiceChat
     {
         private static readonly Dictionary<Guid, Advisor> advisors = new Dictionary<Guid, Advisor>();
@@ -59,7 +58,7 @@ namespace JavaChat
             }
         }
 
-        public Guid ChildJoin(int age, bool male, bool usedChatBefore, string reference, string location)
+        public Guid ChildJoin(int age, int male, int usedChatBefore, string reference, string municipality)
         {
             Guid g = Guid.Empty;
             if (m_isQueueOpen)
@@ -70,11 +69,11 @@ namespace JavaChat
                                         ChildID = g,
                                         Age = age,
                                         Status = eChildStatus.Waiting,
-                                        Gender = male ? Gender.Male : Gender.Female,
+                                        Gender = male == 1 ? Gender.Male : male == 2 ? Gender.Female : Gender.Unknown,
                                         Name = g.ToString(),
-                                        UsedChatBefore = usedChatBefore,
+                                        UsedChatBefore = usedChatBefore == 1 ? "Yes": "No",
                                         Reference = reference,
-                                        Location = location,
+                                        Municipality = municipality,
                                         Description = "",
                                         Enter = DateTime.Now,
                                         LastUpdate = DateTime.Now,
@@ -87,7 +86,7 @@ namespace JavaChat
                                                                Status = eStatus.Waiting,
                                                                From = Guid.Empty,
                                                                Received = DateTime.Now,
-                                                               Text = "Velkommen til chatten"
+                                                               Text = "Welcome to the chat"
                                                            }
                                },
 
@@ -118,7 +117,7 @@ namespace JavaChat
                                                                Status = eStatus.Waiting,
                                                                From = Guid.Empty,
                                                                Received = DateTime.Now,
-                                                               Text = "Velkommen til chatten, klik på klar når du vil tale med en klient"
+                                                               Text = "Welcome to the chat, Click here to start chatting"
                                                            }
                                                    },
                                 });
@@ -206,7 +205,7 @@ namespace JavaChat
             {
                 var child = children[childID];
                 var advisorID = child.Advisor;
-                var text = Child.StatusText(child.Name == childID.ToString() ? "Barnet" : child.Name, status);
+                var text = Child.StatusText(child.Name == childID.ToString() ? "Client" : child.Name, status);
                 if (advisorID.HasValue && advisors.ContainsKey(advisorID.Value))
                 {
                     ChildSay(childID, text, eMessageType.Leave);
@@ -225,7 +224,7 @@ namespace JavaChat
             {
                 var advisor = advisors[advisorID];
                 var childId = advisor.Child;
-                var text = Advisor.StatusText(advisor.Name == advisorID.ToString() ? "Rådgiveren" : advisor.Name, status);
+                var text = Advisor.StatusText(advisor.Name == advisorID.ToString() ? "Advisor" : advisor.Name, status);
                 if (childId.HasValue && children.ContainsKey(childId.Value))
                 {
                     AdvisorSay(advisorID, text, eMessageType.Leave);
@@ -373,7 +372,6 @@ namespace JavaChat
                     retVal = advisor.Status.Equals(eAdvisorStatus.Active);
                 }
             }
-
             return retVal;
         }
 
@@ -412,7 +410,7 @@ namespace JavaChat
                             Received = DateTime.Now,
                             MessageType = eMessageType.Leave,
                             Status = eStatus.Waiting,
-                            Text = (advisor.Name == advisorID.ToString() ? "Rådgiveren" : advisor.Name) + " afsluttede chatten."
+                            Text = (advisor.Name == advisorID.ToString() ? "Advisor" : advisor.Name) + " closed the chat."
                         });
                         child.Advisor = null;
                         child.Status = eChildStatus.Offline;
@@ -440,7 +438,7 @@ namespace JavaChat
                         From = Guid.Empty,
                         MessageType = eMessageType.QueueMessage,
                         Received = DateTime.Now,
-                        Text = "Der er i øjeblikket så mange i kø, at vi desværre forventer, at du ikke kan nå at komme igennem i dag. Du er velkommen til at blive i køen, men du er også meget velkommen til at chatte med os, næste gang rådgivningen er åben."
+                        Text = "Que closed - Please drop by, next time we're online."
                     }
                 );
             }
@@ -451,6 +449,11 @@ namespace JavaChat
         public void OpenQueue()
         {
             m_isQueueOpen = true;
+        }
+
+        public bool QueueStatus()
+        {
+            return m_isQueueOpen;
         }
     }
 }

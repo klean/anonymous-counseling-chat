@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
 
 namespace JavaChat
 {
-    [DataContract]
+    [DataContract(Namespace = "your.namespace.com")]
     public enum eAdvisorStatus
     {
         [EnumMember]
@@ -21,7 +19,7 @@ namespace JavaChat
         Timeout
     }
 
-    [DataContract]
+    [DataContract(Namespace = "your.namespace.com")]
     public class Advisor
     {
         [DataMember]
@@ -58,19 +56,19 @@ namespace JavaChat
             switch(reason)
             {
                 case eAdvisorStatus.Active:
-                    text = string.Format("{0} taster en besked", name);
+                    text = string.Format("{0} is typing a message", name);
                     break;
                 case eAdvisorStatus.Ready:
-                    text = string.Format("{0} har et barn tildelt", name);
+                    text = string.Format("{0} is counselling a user", name);
                     break;
                 case eAdvisorStatus.Hold:
-                    text = string.Format("{0} er på hold", name);
+                    text = string.Format("{0} is on hold", name);
                     break;
                 case eAdvisorStatus.Offline:
-                    text = string.Format("{0} forlod chatten kl. {1}", name, when.ToShortTimeString());
+                    text = string.Format("{0} left the chat at {1}", name, when.ToShortTimeString());
                     break;
                 case eAdvisorStatus.Timeout:
-                    text = string.Format("{0} forlod chatten kl. {1}, pga. timeout", name, when.ToShortTimeString());
+                    text = string.Format("{0} left the chat at {1}, due to timeout", name, when.ToShortTimeString());
                     break;
             }
             return text;
@@ -79,8 +77,8 @@ namespace JavaChat
         public static string Binding(Child value)
         {
             return value.Age > 0 ? 
-                string.Format("ID {0} - {1}, {2} år", value.Name, value.Gender == Gender.Male ? "Dreng" : "Pige", value.Age) : 
-                string.Format("ID {0}", value.Name, value.Gender == Gender.Male ? "Dreng" : "Pige");
+                string.Format("ID {0} - {1}, {2} Years", value.Name, value.Gender == Gender.Male ? "Male" : value.Gender == Gender.Female ? "Female" : "Unknown", value.Age) : 
+                string.Format("ID {0}", value.Name, value.Gender == Gender.Male ? "Male" : "Female");
         }
     }
 }

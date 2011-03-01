@@ -1,96 +1,147 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
-  <publishProfile publishUrl="localhost" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="Default Web Site/JavaChat" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="True" profileName="localhost" publishMethod="MSDeploy" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
-    <file relUrl="App_Themes/BorneChat/Images/8_B++rneChatten_chat-ra¦èdgiver-pause.jpg" publishTime="09/13/2010 09:51:05" />
+  <publishProfile publishUrl="localhost" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="Default Web Site/JavaChat" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="True" profileName="localhost" publishMethod="MSDeploy" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="False">
+    <file relUrl="App_Themes/BorneChat/Images/btn_green.png" publishTime="09/13/2010 09:51:04" />
+    <file relUrl="App_Themes/BorneChat/Images/corner_bottom_left.png" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="App_Themes/BorneChat/Images/logo_borneChat.png" publishTime="09/13/2010 09:51:05" />
     <file relUrl="App_Themes/BorneChat/BorneChatten.css" publishTime="09/13/2010 09:51:05" />
     <file relUrl="Site.Master" publishTime="09/13/2010 23:19:29" />
+    <file relUrl="Web.config" publishTime="10/04/2010 14:24:26" />
     <file relUrl="bin/JavaChat.dll" publishTime="10/04/2010 14:24:25" />
     <file relUrl="App_Themes/BorneChat/Images/corner_top_left.png" publishTime="09/13/2010 09:51:05" />
     <file relUrl="App_Themes/BorneChat/Images/3_B++rneChatten_chat-closed.jpg" publishTime="09/13/2010 09:51:05" />
-    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="09/13/2010 09:51:16" />
     <file relUrl="App_Themes/BorneChat/Images/border_top.png" publishTime="09/13/2010 09:51:04" />
+    <file relUrl="bin/Resources/loadingAnimation.gif" publishTime="06/18/2010 15:23:51" />
     <file relUrl="App_Themes/BorneChat/Images/background.png" publishTime="09/13/2010 09:51:05" />
     <file relUrl="App_Themes/BorneChat/BorneChatten.skin" publishTime="09/13/2010 09:51:05" />
-    <file relUrl="ChildQueue.aspx" publishTime="09/21/2010 09:28:48" />
     <file relUrl="App_Themes/BorneChat/Images/top.png" publishTime="09/13/2010 09:51:04" />
     <file relUrl="App_Themes/BorneChat/Images/2_B++rneChatten_chat-wait.jpg" publishTime="09/13/2010 09:51:04" />
     <file relUrl="App_Themes/BorneChat/Images/corner_top_right.png" publishTime="09/13/2010 09:51:05" />
     <file relUrl="App_Themes/BorneChat/Images/7_B++rneChatten_chat-ra¦èdgiver.jpg" publishTime="09/13/2010 09:51:05" />
     <file relUrl="App_Themes/BorneChat/Images/1_B++rneChatten_chat-open.jpg" publishTime="09/13/2010 09:51:04" />
-    <file relUrl="App_Themes/BorneChat/Images/logo_borneChat_right.png" publishTime="09/13/2010 09:51:05" />
-    <file relUrl="AdvisorChat.aspx" publishTime="09/27/2010 13:58:23" />
     <file relUrl="bin/WebChat.pdb" publishTime="10/04/2010 14:37:32" />
     <file relUrl="App_Themes/BorneChat/Images/corner_bottom_right.png" publishTime="09/13/2010 09:51:05" />
     <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="09/13/2010 09:51:16" />
     <file relUrl="App_Themes/BorneChat/Images/4_B++rneChatten_sp++rgsma¦èl.jpg" publishTime="09/13/2010 09:51:05" />
-    <file relUrl="App_Themes/BorneChat/Images/6_B++rneChatten_chat-barn.jpg" publishTime="09/13/2010 09:51:05" />
     <file relUrl="bin/NETlinQ.Web.Tools.pdb" publishTime="10/04/2010 14:24:24" />
     <file relUrl="Default.aspx" publishTime="09/14/2010 10:09:00" />
     <file relUrl="App_Themes/BorneChat/Images/btn_send.png" publishTime="09/13/2010 09:51:04" />
     <file relUrl="App_Themes/BorneChat/Images/border_bottom.png" publishTime="09/13/2010 09:51:04" />
     <file relUrl="App_Themes/BorneChat/Images/topLeft.png" publishTime="09/13/2010 09:51:05" />
     <file relUrl="bin/NETlinQ.Web.Tools.dll" publishTime="10/04/2010 14:24:24" />
-    <file relUrl="App_Themes/BorneChat/Images/logo_borneChat.png" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="AdvisorChat.aspx" publishTime="09/27/2010 13:58:23" />
     <file relUrl="ChildChat.aspx" publishTime="09/27/2010 13:58:23" />
     <file relUrl="App_Themes/BorneChat/Images/5_B++rneChatten_widget.jpg" publishTime="09/13/2010 09:51:05" />
     <file relUrl="App_Themes/BorneChat/Images/topRight.png" publishTime="09/13/2010 09:51:04" />
     <file relUrl="App_Themes/BorneChat/Images/border_right.png" publishTime="09/13/2010 09:51:05" />
-    <file relUrl="App_Themes/BorneChat/Images/border_left.png" publishTime="09/13/2010 09:51:05" />
-    <file relUrl="Web.config" publishTime="10/04/2010 14:24:26" />
     <file relUrl="Images/Smileys/biggrin.gif" publishTime="09/27/2010 13:58:23" />
-    <file relUrl="App_Themes/BorneChat/Images/btn_green.png" publishTime="09/13/2010 09:51:04" />
-    <file relUrl="App_Themes/BorneChat/Images/corner_bottom_left.png" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="App_Themes/BorneChat/Images/8_B++rneChatten_chat-ra¦èdgiver-pause.jpg" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="App_Themes/BorneChat/Images/logo_borneChat_right.png" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="App_Themes/BorneChat/Images/6_B++rneChatten_chat-barn.jpg" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="App_Themes/BorneChat/Images/border_left.png" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="bin/WebChat.dll" publishTime="10/04/2010 14:37:32" />
     <file relUrl="bin/JavaChat.pdb" publishTime="10/04/2010 14:24:25" />
     <file relUrl="Scripts/jquery-1.4.1.js" publishTime="09/13/2010 09:51:16" />
     <file relUrl="ChatService.svc" publishTime="09/13/2010 09:51:21" />
-    <file relUrl="bin/Resources/loadingAnimation.gif" publishTime="06/18/2010 15:23:51" />
+    <file relUrl="ChildQueue.aspx" publishTime="09/21/2010 09:28:48" />
     <file relUrl="App_Themes/BorneChat/Images/btn_black.png" publishTime="09/13/2010 09:51:05" />
-    <file relUrl="bin/WebChat.dll" publishTime="10/04/2010 14:37:32" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="09/13/2010 09:51:16" />
   </publishProfile>
-  <publishProfile publishUrl="C:\Users\Thomas\Desktop\WebChat" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="False">
+  <publishProfile publishUrl="localhost" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="Default Web Site/Albahus" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="False" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="MSDeploy" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="False">
+    <file relUrl="App_Themes/BorneChat/Images/8_B++rneChatten_chat-ra¦èdgiver-pause.jpg" publishTime="09/13/2010 09:51:05" />
     <file relUrl="App_Themes/BorneChat/Images/btn_green.png" publishTime="09/13/2010 09:51:04" />
-    <file relUrl="App_Themes/BorneChat/Images/corner_bottom_left.png" publishTime="09/13/2010 09:51:05" />
-    <file relUrl="App_Themes/BorneChat/BorneChatten.css" publishTime="09/13/2010 09:51:05" />
-    <file relUrl="Site.Master" publishTime="09/13/2010 23:19:29" />
-    <file relUrl="Web.config" publishTime="10/04/2010 14:51:44" />
-    <file relUrl="bin/JavaChat.dll" publishTime="10/04/2010 14:24:25" />
+    <file relUrl="App_Themes/BorneChat/BorneChatten.css" publishTime="01/23/2011 17:47:32" />
+    <file relUrl="Site.Master" publishTime="01/23/2011 17:47:34" />
+    <file relUrl="bin/JavaChat.dll" publishTime="01/25/2011 10:20:07" />
     <file relUrl="App_Themes/BorneChat/Images/corner_top_left.png" publishTime="09/13/2010 09:51:05" />
     <file relUrl="App_Themes/BorneChat/Images/3_B++rneChatten_chat-closed.jpg" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="09/13/2010 09:51:16" />
+    <file relUrl="App_Themes/BorneChat/Images/border_top.png" publishTime="09/13/2010 09:51:04" />
+    <file relUrl="bin/Resources/loadingAnimation.gif" publishTime="06/18/2010 15:23:51" />
+    <file relUrl="App_Themes/BorneChat/Images/background.png" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="App_Themes/BorneChat/BorneChatten.skin" publishTime="10/18/2010 10:39:03" />
+    <file relUrl="App_Themes/BorneChat/Images/top.png" publishTime="09/13/2010 09:51:04" />
+    <file relUrl="App_Themes/BorneChat/Images/2_B++rneChatten_chat-wait.jpg" publishTime="09/13/2010 09:51:04" />
+    <file relUrl="App_Themes/BorneChat/Images/corner_top_right.png" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="App_Themes/BorneChat/Images/7_B++rneChatten_chat-ra¦èdgiver.jpg" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="App_Themes/BorneChat/Images/1_B++rneChatten_chat-open.jpg" publishTime="09/13/2010 09:51:04" />
+    <file relUrl="AdvisorChat.aspx" publishTime="01/23/2011 17:47:34" />
+    <file relUrl="bin/WebChat.pdb" publishTime="01/25/2011 10:20:08" />
+    <file relUrl="App_Themes/BorneChat/Images/corner_bottom_right.png" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="09/13/2010 09:51:16" />
+    <file relUrl="App_Themes/BorneChat/Images/4_B++rneChatten_sp++rgsma¦èl.jpg" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="bin/NETlinQ.Web.Tools.pdb" publishTime="01/05/2011 10:42:31" />
+    <file relUrl="Default.aspx" publishTime="01/23/2011 17:47:34" />
+    <file relUrl="App_Themes/BorneChat/Images/btn_send.png" publishTime="09/13/2010 09:51:04" />
+    <file relUrl="App_Themes/BorneChat/Images/albahus_logotype.gif" publishTime="10/18/2010 10:39:03" />
+    <file relUrl="App_Themes/BorneChat/Images/border_bottom.png" publishTime="09/13/2010 09:51:04" />
+    <file relUrl="App_Themes/BorneChat/Images/topLeft.png" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="bin/NETlinQ.Web.Tools.dll" publishTime="01/05/2011 10:42:32" />
+    <file relUrl="App_Themes/BorneChat/Images/logo_borneChat.png" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="ChildChat.aspx" publishTime="01/23/2011 17:47:34" />
+    <file relUrl="App_Themes/BorneChat/Images/5_B++rneChatten_widget.jpg" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="App_Themes/BorneChat/Images/chatWelcome.jpg" publishTime="10/18/2010 10:39:03" />
+    <file relUrl="App_Themes/BorneChat/Images/topRight.png" publishTime="09/13/2010 09:51:04" />
+    <file relUrl="App_Themes/BorneChat/Images/border_right.png" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="App_Themes/BorneChat/Images/border_left.png" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="Images/Smileys/biggrin.gif" publishTime="09/27/2010 13:58:23" />
+    <file relUrl="Web.config" publishTime="01/25/2011 10:20:10" />
+    <file relUrl="App_Themes/BorneChat/Images/logo_borneChat_right.png" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="App_Themes/BorneChat/Images/6_B++rneChatten_chat-barn.jpg" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="App_Themes/BorneChat/Images/corner_bottom_left.png" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="bin/WebChat.dll" publishTime="01/25/2011 10:20:08" />
+    <file relUrl="bin/JavaChat.pdb" publishTime="01/25/2011 10:20:07" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="09/13/2010 09:51:16" />
+    <file relUrl="ChatService.svc" publishTime="09/13/2010 09:51:21" />
+    <file relUrl="ChildQueue.aspx" publishTime="01/23/2011 17:47:34" />
+    <file relUrl="App_Themes/BorneChat/Images/btn_black.png" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="AdminInterface.aspx" publishTime="01/23/2011 17:47:34" />
+  </publishProfile>
+  <publishProfile publishUrl="https://chat.albahus.dk" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="chat.albahus.dk" publishMethod="FPSE" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="App_Themes/BorneChat/Images/8_B++rneChatten_chat-ra¦èdgiver-pause.jpg" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="ClientQueue.aspx" publishTime="02/22/2011 10:25:41" />
+    <file relUrl="Site.Master" publishTime="01/23/2011 17:47:34" />
+    <file relUrl="bin/JavaChat.dll" publishTime="02/22/2011 10:36:57" />
+    <file relUrl="App_Themes/BorneChat/Images/corner_top_left.png" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="App_Themes/BorneChat/Images/3_B++rneChatten_chat-closed.jpg" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="AdminInterface.aspx" publishTime="02/22/2011 10:25:40" />
     <file relUrl="App_Themes/BorneChat/Images/border_top.png" publishTime="09/13/2010 09:51:04" />
     <file relUrl="App_Themes/BorneChat/Images/background.png" publishTime="09/13/2010 09:51:05" />
-    <file relUrl="App_Themes/BorneChat/BorneChatten.skin" publishTime="09/13/2010 09:51:05" />
-    <file relUrl="ChildQueue.aspx" publishTime="09/21/2010 09:28:48" />
+    <file relUrl="App_Themes/BorneChat/BorneChatten.skin" publishTime="02/03/2011 22:47:57" />
     <file relUrl="App_Themes/BorneChat/Images/top.png" publishTime="09/13/2010 09:51:04" />
     <file relUrl="App_Themes/BorneChat/Images/2_B++rneChatten_chat-wait.jpg" publishTime="09/13/2010 09:51:04" />
     <file relUrl="App_Themes/BorneChat/Images/corner_top_right.png" publishTime="09/13/2010 09:51:05" />
     <file relUrl="App_Themes/BorneChat/Images/7_B++rneChatten_chat-ra¦èdgiver.jpg" publishTime="09/13/2010 09:51:05" />
     <file relUrl="App_Themes/BorneChat/Images/1_B++rneChatten_chat-open.jpg" publishTime="09/13/2010 09:51:04" />
     <file relUrl="App_Themes/BorneChat/Images/logo_borneChat_right.png" publishTime="09/13/2010 09:51:05" />
-    <file relUrl="AdvisorChat.aspx" publishTime="09/27/2010 13:58:23" />
-    <file relUrl="bin/WebChat.pdb" publishTime="10/04/2010 14:49:41" />
+    <file relUrl="AdvisorChat.aspx" publishTime="02/22/2011 10:40:48" />
+    <file relUrl="bin/WebChat.pdb" publishTime="02/22/2011 10:38:52" />
     <file relUrl="App_Themes/BorneChat/Images/corner_bottom_right.png" publishTime="09/13/2010 09:51:05" />
     <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="09/13/2010 09:51:16" />
     <file relUrl="App_Themes/BorneChat/Images/4_B++rneChatten_sp++rgsma¦èl.jpg" publishTime="09/13/2010 09:51:05" />
-    <file relUrl="bin/NETlinQ.Web.Tools.pdb" publishTime="10/04/2010 14:24:24" />
-    <file relUrl="Default.aspx" publishTime="09/14/2010 10:09:00" />
+    <file relUrl="App_Themes/BorneChat/BorneChatten.css" publishTime="01/23/2011 17:47:32" />
+    <file relUrl="Default.aspx" publishTime="02/22/2011 10:36:26" />
     <file relUrl="App_Themes/BorneChat/Images/btn_send.png" publishTime="09/13/2010 09:51:04" />
+    <file relUrl="App_Themes/BorneChat/Images/albahus_logotype.gif" publishTime="10/18/2010 10:39:03" />
     <file relUrl="App_Themes/BorneChat/Images/border_bottom.png" publishTime="09/13/2010 09:51:04" />
     <file relUrl="App_Themes/BorneChat/Images/topLeft.png" publishTime="09/13/2010 09:51:05" />
-    <file relUrl="bin/NETlinQ.Web.Tools.dll" publishTime="10/04/2010 14:24:24" />
     <file relUrl="App_Themes/BorneChat/Images/logo_borneChat.png" publishTime="09/13/2010 09:51:05" />
-    <file relUrl="ChildChat.aspx" publishTime="09/27/2010 13:58:23" />
+    <file relUrl="App_Themes/BorneChat/Images/albahuslogo.png" publishTime="01/23/2011 17:47:32" />
     <file relUrl="App_Themes/BorneChat/Images/5_B++rneChatten_widget.jpg" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="App_Themes/BorneChat/Images/chatWelcome.jpg" publishTime="10/18/2010 10:39:03" />
     <file relUrl="App_Themes/BorneChat/Images/topRight.png" publishTime="09/13/2010 09:51:04" />
     <file relUrl="App_Themes/BorneChat/Images/border_right.png" publishTime="09/13/2010 09:51:05" />
-    <file relUrl="App_Themes/BorneChat/Images/8_B++rneChatten_chat-ra¦èdgiver-pause.jpg" publishTime="09/13/2010 09:51:05" />
-    <file relUrl="Images/Smileys/biggrin.gif" publishTime="09/27/2010 13:58:23" />
-    <file relUrl="App_Themes/BorneChat/Images/6_B++rneChatten_chat-barn.jpg" publishTime="09/13/2010 09:51:05" />
     <file relUrl="App_Themes/BorneChat/Images/border_left.png" publishTime="09/13/2010 09:51:05" />
-    <file relUrl="bin/WebChat.dll" publishTime="10/04/2010 14:49:41" />
-    <file relUrl="bin/JavaChat.pdb" publishTime="10/04/2010 14:24:25" />
+    <file relUrl="Web.config" publishTime="02/22/2011 10:44:19" />
+    <file relUrl="Images/Smileys/biggrin.gif" publishTime="09/27/2010 13:58:23" />
+    <file relUrl="App_Themes/BorneChat/Images/btn_green.png" publishTime="09/13/2010 09:51:04" />
+    <file relUrl="App_Themes/BorneChat/Images/corner_bottom_left.png" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="bin/WebChat.dll" publishTime="02/22/2011 10:38:52" />
+    <file relUrl="App_Themes/BorneChat/Images/6_B++rneChatten_chat-barn.jpg" publishTime="09/13/2010 09:51:05" />
+    <file relUrl="bin/JavaChat.pdb" publishTime="02/22/2011 10:36:57" />
     <file relUrl="Scripts/jquery-1.4.1.js" publishTime="09/13/2010 09:51:16" />
-    <file relUrl="ChatService.svc" publishTime="09/13/2010 09:51:21" />
-    <file relUrl="bin/Resources/loadingAnimation.gif" publishTime="06/18/2010 15:23:51" />
+    <file relUrl="ClientChat.aspx" publishTime="02/22/2011 10:25:41" />
+    <file relUrl="ChatService.svc" publishTime="02/22/2011 10:25:41" />
     <file relUrl="App_Themes/BorneChat/Images/btn_black.png" publishTime="09/13/2010 09:51:05" />
     <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="09/13/2010 09:51:16" />
   </publishProfile>

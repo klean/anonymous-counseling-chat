@@ -1,18 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
 using System.ServiceModel;
-using System.Text;
 
 namespace JavaChat
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IServiceChat" in both code and config file together.
-    [ServiceContract(Namespace = "http://JavaChat")]
+    [ServiceContract(Namespace = "your.namespace.com")]
     public interface IServiceChat
     {
         [OperationContract]
-        Guid ChildJoin(int age, bool male, bool usedChatBefore, string reference, string location);
+        Guid ChildJoin(int age, int male, int usedChatBefore, string reference, string municipality);
 
         [OperationContract]
         Guid AdvisorJoin();
@@ -61,5 +57,8 @@ namespace JavaChat
 
         [OperationContract]
         void OpenQueue();
+
+        [OperationContract]
+        bool QueueStatus();
     }
 }

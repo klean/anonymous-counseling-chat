@@ -13,8 +13,8 @@ namespace WebChat
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            IPAddress ipRangeStart = IPAddress.Parse(ConfigurationManager.AppSettings["IPRangeStart"]);
-            IPAddress ipRangeEnd = IPAddress.Parse(ConfigurationManager.AppSettings["IPRangeEnd"]);
+            IPAddress ipRangeStart = IPAddress.Parse(ConfigurationSettings.AppSettings["IPRangeStart"]);
+            IPAddress ipRangeEnd = IPAddress.Parse(ConfigurationSettings.AppSettings["IPRangeEnd"]);
             IPAddress userIp = IPAddress.Parse(Request.UserHostAddress);
 
             if (!(ipRangeStart.Address <= userIp.Address && userIp.Address <= ipRangeEnd.Address))
@@ -22,7 +22,7 @@ namespace WebChat
                 Response.Redirect("Default.aspx");
             }
 
-            Print.PrintPreview(this, btnPrint, "Print chatlog", "AlbaHusChatten", tbMessages.ClientID);
+            Print.PrintPreview(this, btnPrint, "Print chatlog", "AnonymousChat", tbMessages.ClientID);
             EventJS.SetWebControlEvent(btnPrint, "onClick", "return false;");
         }
     }

@@ -1,23 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
 
 namespace JavaChat
 {
-    [DataContract]
+    [DataContract(Namespace = "your.namespace.com")]
     public enum Gender
     {
         [EnumMember]
-        Male,
+        Male = 1,
         [EnumMember]
-        Female,
+        Female = 2,
         [EnumMember]
-        Unknown,
+        Unknown = 0,
     }
 
-    [DataContract]
+    [DataContract(Namespace = "your.namespace.com")]
     public enum eChildStatus
     {
         [EnumMember]
@@ -34,7 +32,7 @@ namespace JavaChat
         Panic
     }
 
-    [DataContract]
+    [DataContract(Namespace = "your.namespace.com")]
     public class Child
     {
         [DataMember]
@@ -67,13 +65,16 @@ namespace JavaChat
         public Gender Gender { get; set; }
 
         [DataMember]
-        public bool UsedChatBefore { get; set; }
+        public string UsedChatBefore { get; set; }
 
         [DataMember]
         public string Reference { get; set; }
 
         [DataMember]
         public string Location { get; set; }
+
+        [DataMember]
+        public string Municipality { get; set; }
 
         [DataMember]
         public string Description { get; set; }
@@ -85,22 +86,22 @@ namespace JavaChat
             switch (reason)
             {
                 case eChildStatus.Active:
-                    text = string.Format("{0} taster en besked", name);
+                    text = string.Format("{0} is typing a message", name);
                     break;
                 case eChildStatus.Ready:
-                    text = string.Format("{0} har en rådgiver tildelt", name);
+                    text = string.Format("{0} has an advisor assigned", name);
                     break;
                 case eChildStatus.Waiting:
-                    text = string.Format("{0} venter på en rådgiver", name);
+                    text = string.Format("{0} is waiting for an advisor", name);
                     break;
                 case eChildStatus.Offline:
-                    text = string.Format("{0} forlod chatten kl. {1}", name, when.ToShortTimeString());
+                    text = string.Format("{0} left the chat at {1}", name, when.ToShortTimeString());
                     break;
                 case eChildStatus.Timeout:
-                    text = string.Format("{0} forlod chatten kl. {1}, pga. timeout", name, when.ToShortTimeString());
+                    text = string.Format("{0} left the chat at {1}, due to timeout", name, when.ToShortTimeString());
                     break;
                 case eChildStatus.Panic:
-                    text = string.Format("{0} forlod chatten kl. {1} i panik", name, when.ToShortTimeString());
+                    text = string.Format("{0} left the chat at {1} due to panic...", name, when.ToShortTimeString());
                     break;
                 default:
                     text = "";
@@ -112,8 +113,8 @@ namespace JavaChat
         public static string Binding(Advisor value)
         {
             return value.AdvisorID.ToString() == value.Name
-                       ? "Rådgiveren er klar til at tale med dig"
-                       : string.Format("{0} er klar til at tale med dig", value.Name);
+                       ? "Advisor ready to chat"
+                       : string.Format("{0} is ready to chat with you", value.Name);
         }
     }
 }

@@ -49,22 +49,13 @@ namespace WebChat {
         protected global::System.Web.UI.WebControls.Label lblGenderTxt;
         
         /// <summary>
-        /// rbGenderMale control.
+        /// ddlbGender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbGenderMale;
-        
-        /// <summary>
-        /// rbGenderFemale control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbGenderFemale;
+        protected global::System.Web.UI.WebControls.DropDownList ddlbGender;
         
         /// <summary>
         /// lblAge control.
@@ -85,6 +76,15 @@ namespace WebChat {
         protected global::System.Web.UI.WebControls.TextBox tbAge;
         
         /// <summary>
+        /// RequiredFieldValidatorAge control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorAge;
+        
+        /// <summary>
         /// lblChatBeforeText control.
         /// </summary>
         /// <remarks>
@@ -94,22 +94,13 @@ namespace WebChat {
         protected global::System.Web.UI.WebControls.Label lblChatBeforeText;
         
         /// <summary>
-        /// rbChatBeforeYes control.
+        /// ddlbChatBeforeYes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbChatBeforeYes;
-        
-        /// <summary>
-        /// rbChatBeforeNo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbChatBeforeNo;
+        protected global::System.Web.UI.WebControls.DropDownList ddlbChatBeforeYes;
         
         /// <summary>
         /// lblWhere control.
@@ -130,76 +121,22 @@ namespace WebChat {
         protected global::System.Web.UI.WebControls.DropDownList ddlReference;
         
         /// <summary>
-        /// lblLocation control.
+        /// lblMunicipality control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLocation;
+        protected global::System.Web.UI.WebControls.Label lblMunicipality;
         
         /// <summary>
-        /// ddlLocation control.
+        /// ddlMunicipality control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlLocation;
-        
-        /// <summary>
-        /// lblHusk control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHusk;
-        
-        /// <summary>
-        /// anonym control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label anonym;
-        
-        /// <summary>
-        /// Label3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
-        
-        /// <summary>
-        /// Label4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
-        
-        /// <summary>
-        /// Label5 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
-        
-        /// <summary>
-        /// Label6 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label6;
+        protected global::System.Web.UI.WebControls.DropDownList ddlMunicipality;
         
         /// <summary>
         /// btnJoin control.
